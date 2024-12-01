@@ -20,7 +20,7 @@
 2. Склонируйте репозиторий проекта:
 
    ```sh
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/foblako/EndlessSurvivors.git
    ```
 
 3. Перейдите в директорию проекта:
