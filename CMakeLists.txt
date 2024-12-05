@@ -29,8 +29,15 @@ add_custom_command(TARGET main
 )
 
 
-add_custom_command(TARGET main
-    COMMENT "Copy OpenAL DLL"
-    PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SFML_SOURCE_DIR}/extlibs/bin/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,x64,x86>/openal32.dll $<TARGET_FILE_DIR:main>
-VERBATIM)
+if(WIN32)
+    # Путь к openal32.dll в вашем проекте
+    set(OPENAL_DLL_PATH "${CMAKE_SOURCE_DIR}/ThirdParty/OpenAL/bin/openal32.dll")
 
+    add_custom_command(
+        TARGET main
+        POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${OPENAL_DLL_PATH}"
+            "$<TARGET_FILE_DIR:main>"
+    )
+endif()
