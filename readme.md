@@ -25,13 +25,13 @@
    ```sh
    git clone https://github.com/foblako/EndlessSurvivors.git
    ```
+![Вывод должен выглядеть примерно так:](image.png)
 
 2. Перейдите в директорию проекта:
 
    ```sh
    cd EndlessSurvivors
    ```
-![Вывод должен выглядеть примерно так:](image.png)
 
 3. Создайте директорию сборки и перейдите в неё:
 
