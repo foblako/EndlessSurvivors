@@ -1,6 +1,5 @@
 # Ignore build directories
 /build/
-/.vscode/
 
 # Ignore CMake generated files
 CMakeFiles/
@@ -31,7 +30,6 @@ _deps/
 *.user
 *.swp
 *.swo
-
 
 # Exclude specific DLL
 !ThirdParty/OpenAL/bin/openal32.dll
