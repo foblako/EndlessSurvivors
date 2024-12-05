@@ -1,5 +1,6 @@
 # Ignore build directories
 /build/
+.vscode/
 
 # Ignore CMake generated files
 CMakeFiles/
