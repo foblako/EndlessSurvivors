@@ -16,6 +16,7 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
+
 # Automatically add all .cpp files in src directory
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
