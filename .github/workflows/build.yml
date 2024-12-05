@@ -14,10 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install dependencies
+    - name: Install CMake
       run: |
         choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
-        choco install sfml -y
 
     - name: Configure CMake
       run: cmake -S . -B build
