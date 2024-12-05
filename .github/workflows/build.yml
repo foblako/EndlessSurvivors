@@ -18,11 +18,19 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y libsfml-dev cmake make libudev-dev libopenal-dev
 
+    - name: Debug OpenAL paths
+      run: |
+        ls /usr/lib/x86_64-linux-gnu/libopenal.so
+        ls /usr/include/AL/al.h
+
     - name: Create build directory
       run: mkdir build
 
     - name: Configure CMake
-      run: cmake -S . -B build
+      run: |
+        cmake -S . -B build \
+          -DOPENAL_LIBRARY=/usr/lib/x86_64-linux-gnu/libopenal.so \
+          -DOPENAL_INCLUDE_DIR=/usr/include/AL
 
     - name: Build project
       run: cmake --build build
