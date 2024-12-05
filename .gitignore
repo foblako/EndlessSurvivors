@@ -31,3 +31,7 @@ _deps/
 *.user
 *.swp
 *.swo
+
+
+# Exclude specific DLL
+!ThirdParty/OpenAL/bin/openal32.dll
