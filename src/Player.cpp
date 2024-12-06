@@ -208,7 +208,7 @@ bool Player::restartRequested() const {
 }
 
 void Player::resetRestartRequest() {
-    restart = false;
+    restart = true;
 }
 
 void Player::winGame() {

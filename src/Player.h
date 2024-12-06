@@ -44,8 +44,6 @@ public:
     // Game state methods
     void resetRestartRequest();
     void winGame();
-    void showDeathMenu(sf::RenderWindow& window);
-    void showWinMenu(sf::RenderWindow& window);
     
     // Combat methods
     void takeDamage(float amount);
@@ -89,8 +87,8 @@ private:
     float currentFrameTime = 0.0f;
 
     // Stats
-    float health = 100.0f;
-    float maxHealth = 100.0f;
+    float health = 10.0f;
+    float maxHealth = 10.0f;
     float healthRegen = PLAYER_HEALTH_REGEN;
     float timeSinceLastAttack = 0.0f;
 

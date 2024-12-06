@@ -58,7 +58,7 @@ int main() {
             }
 
             if (player.restartRequested()) {
-                player.resetRestartRequest();
+                std::cout << "Player requested restart" << std::endl;
                 restartGame = true;
                 break;
             }

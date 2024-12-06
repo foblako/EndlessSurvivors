@@ -124,7 +124,7 @@ const float PROJECTILE_DAMAGE = 1000.0f;
 const float PROJECTILE_LIFETIME = 0.5f;
 
 // Константы для Greg Star
-const float GREG_STAR_SPAWN_CHANCE = 0.000001f;
+const float GREG_STAR_SPAWN_CHANCE = 0.001f;
 const std::string GREGSTAR_TEXTURE = "Assets/BackGround/greg.png";
 
 // Константы для взрывов
