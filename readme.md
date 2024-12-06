@@ -42,7 +42,7 @@
    pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
    ```
    Терминал покажет следующий вывод, представленный ниже. Нажмите enter для продолжения
-   ![alt text](image-5.png)
+   ![alt text](https://github.com/foblako/EndlessSurvivors/blob/master/Readme%20images/image-5.png)
 
    Затем также введите Y, чтобы продолжить установку
 
@@ -59,7 +59,7 @@
    ```sh
    git clone https://github.com/foblako/EndlessSurvivors.git
    ```
-![Вывод должен выглядеть примерно так:](image.png)
+![Вывод должен выглядеть примерно так:](https://github.com/foblako/EndlessSurvivors/blob/master/Readme%20images/image.png)
 
 5. **Перейдите в директорию проекта:**
 
@@ -72,7 +72,7 @@
    ```sh
    mkdir build && cd build
    ```
-![В результате мы в папке проекта, осталось собрать игру](image-1.png)
+![В результате мы в папке проекта, осталось собрать игру](https://github.com/foblako/EndlessSurvivors/blob/master/Readme%20images/image-1.png)
 
 7. **Запустите CMake для генерации файлов сборки:**
 
@@ -80,7 +80,7 @@
    cmake -G "MinGW Makefiles" ..
    ```
 
-   ![Отлично, проект сконфигурирован](image-2.png)
+   ![Отлично, проект сконфигурирован](https://github.com/foblako/EndlessSurvivors/blob/master/Readme%20images/image-2.png)
 
 8. **Соберите проект с помощью Make:**
 
@@ -88,7 +88,7 @@
    mingw32-make
    ```
 
-   ![Успешная сборка игры должна дойти до 100% и завершиться](image-3.png)
+   ![Успешная сборка игры должна дойти до 100% и завершиться](https://github.com/foblako/EndlessSurvivors/blob/master/Readme%20images/image-3.png)
 
 9. **Запустите игру:**
 
