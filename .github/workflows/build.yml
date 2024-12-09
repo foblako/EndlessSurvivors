@@ -18,6 +18,11 @@ jobs:
       run: |
         if (Test-Path "C:\ProgramData\chocolatey\lib\cmake.install") {
           choco uninstall cmake.install -y
+          if ($LASTEXITCODE -ne 0) {
+            if (Test-Path "C:\Program Files\CMake") {
+              Remove-Item "C:\Program Files\CMake" -Recurse -Force
+            }
+          }
         }
         if (Test-Path "C:\ProgramData\chocolatey\lib\cmake") {
           choco uninstall cmake -y
