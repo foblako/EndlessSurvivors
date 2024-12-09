@@ -14,23 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Ensure system is ready for CMake installation
-      run: |
-        if (Test-Path "C:\ProgramData\chocolatey\lib\cmake.install") {
-          choco uninstall cmake.install -y
-          if ($LASTEXITCODE -ne 0) {
-            if (Test-Path "C:\Program Files\CMake") {
-              Remove-Item "C:\Program Files\CMake" -Recurse -Force
-            }
-          }
-        }
-        if (Test-Path "C:\ProgramData\chocolatey\lib\cmake") {
-          choco uninstall cmake -y
-        }
-        if (Test-Path "C:\Program Files\CMake") {
-          Remove-Item "C:\Program Files\CMake" -Recurse -Force
-        }
-
     - name: Install CMake
       run: |
         choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
